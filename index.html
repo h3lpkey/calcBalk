@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bulma.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <section class="section">
+        <div class="container">
+          <div class="field is-horizontal">
+            <div class="field">
+              <label class="label">Длина РУ</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  v-model="lenghtWorkSections"
+                  placeholder="Text input"
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Кол-во РУ</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  v-model="amountWorkSections"
+                  placeholder="Text input"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="table-container">
+          <table class="table is-striped">
+            <thead>
+              <tr>
+                <th>Тип</th>
+                <th>Кол-во шт.</th>
+                <th>Цена за шт.</th>
+                <th>Общая стоимость</th>
+                <th>Вес 1шт\кг</th>
+                <th>Общий вес</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="product in products">
+                <td>{{product.name}}</td>
+                <td>{{counter(product).toFixed(2)}}</td>
+                <td>{{product.price.toFixed(2)}}</td>
+                <td>{{totalPrice(product).toFixed(2)}}</td>
+                <td>{{product.weight.toFixed(2)}}</td>
+                <td>{{totalWeight(product).toFixed(2)}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <p>Общий вес</p>
+          <p>{{finalWeight()}}</p>
+          <p>Общая цена</p>
+          <p>{{finalPrice()}}</p>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="./vue.js"></script>
+  <script src="./script.js"></script>
+</html>
