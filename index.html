@@ -9,48 +9,88 @@
   </head>
   <body>
     <div id="app" class="container">
-      <section class="section notification">
-        <div class="field is-horizontal">
-          <div class="field">
-            <h1 class="title">Расчет односторонних дорожных ограждений</h1>
-            <h2 class="subtitle">по ГОСТ 2012</h2>
-            <label class="label">Длина РУ, рабочий участок 1 и только 1</label>
-            <div class="control">
-              <input
-                class="input"
-                type="text"
-                v-model="lenghtWorkSections"
-                placeholder="Text input"
-              />
+      <section
+        class="section notification"
+        v-if="Object.entries(currentSсheme).length === 0"
+      >
+        <h1 class="title">Выберите тип продукции</h1>
+        <div class="field">
+          <div class="control">
+            <div class="select is-large">
+              <select v-model="currentSсheme" v-model="key">
+                <option v-for="scheme in schemes" :value="scheme"
+                  >{{scheme.name}}</option
+                >
+              </select>
             </div>
           </div>
         </div>
-        <p>Общий вес: {{finalWeight()}}</p>
-        <p>Общая цена: {{finalPrice()}}р.</p>
       </section>
-      <section class="section">
+      <section
+        class="section notification"
+        v-if="Object.entries(currentSсheme).length !== 0"
+      >
+        <h1 class="title">Расчет {{currentSсheme.nameSecond}}</h1>
+        <h2 class="subtitle">по ГОСТ 2012</h2>
+        <div class="field is-horizontal">
+          <div class="field-body">
+            <div class="field">
+              <label class="label">Длина РУ</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="number"
+                  v-model.number="lenghtWorkSections"
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Кол-во РУ</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="number"
+                  v-model.number="amountWorkSections"
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Тип балки СБ</label>
+              <div class="select">
+                <select>
+                  <option v-for="balk in currentSсheme.balks">{{balk.name}}</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p v-if="weight > 0">Общий вес: {{finalWeight()}}</p>
+        <button class="button is-danger" @click="clearAll()">
+          Сброс
+        </button>
+      </section>
+      <section
+        class="section"
+        v-if="lenghtWorkSections > 0 && amountWorkSections > 0"
+      >
         <div class="table-container">
           <table class="table is-fullwidth is-striped">
             <thead>
               <tr>
                 <th>Тип</th>
                 <th>Кол-во шт.</th>
-                <th>Цена за шт.</th>
-                <th>Общая стоимость</th>
                 <th>Вес 1шт\кг</th>
                 <th>Общий вес</th>
               </tr>
             </thead>
-            <tbody>
+            <!-- <tbody>
               <tr v-for="product in products">
                 <td>{{product.name}}</td>
                 <td>{{counter(product).toFixed(2)}}</td>
-                <td>{{product.price.toFixed(2)}}</td>
-                <td>{{totalPrice(product).toFixed(2)}}</td>
                 <td>{{product.weight.toFixed(3)}}</td>
                 <td>{{totalWeight(product).toFixed(2)}}</td>
               </tr>
-            </tbody>
+            </tbody> -->
           </table>
         </div>
       </section>

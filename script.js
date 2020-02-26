@@ -1,89 +1,187 @@
 new Vue({
   el: "#app",
   data: {
-    lenghtWorkSections: 10,
-    amountWorkSections: 1,
-    products: {
-      balk: {
-        name: "Секция балки СБ-0 3х2320 мм",
-        link: "балка",
-        length: 2,
-        price: 5168.1, // ruble
-        weight: 26, // kg
-        count: 0,
-        totalPrice: 0,
-        totalWeight: 0
+    lenghtWorkSections: 0,
+    amountWorkSections: 0,
+    currentSсheme: {},
+    currentProduct: {},
+    weight: 0,
+    schemes: {
+      RoadFence: {
+        name: "Односторонние дорожные ограждения",
+        nameSecond: "односторонних дорожных ограждений",
+        balks: {
+          2320: {
+            name: "СБ-0 2320 мм",
+            fullname: "Секция балки СБ-0 3х2320 мм",
+            link: "балка2320",
+            length: 2,
+            weight: 26, // kg
+          },
+          4320: {
+            name: "СБ-1 3х4320 мм",
+            fullname: "Секция балки СБ-1 3х4320 мм",
+            link: "балка4320",
+            length: 4,
+            weight: 47.5, // kg
+          },
+          6320: {
+            name: "СБ-2 3х6320 мм",
+            fullname: "Секция балки СБ-2 3х6320 мм",
+            link: "балка6320",
+            length: 6,
+            weight: 70.100, // kg
+          }
+        },
+        products: {
+          balk: {
+            name: "Секция балки СБ-0 3х2320 мм",
+            link: "балка",
+            length: 2,
+            weight: 26, // kg
+          },
+          strut: {
+            name: "Стойка дорожная СД-1 (1,8 ГОСТ 2012)",
+            link: "стойка",
+            weight: 18.7, // kg
+          },
+          bracket: {
+            name: "Консоль жесткая КЖ-18 (ГОСТ 2012)",
+            link: "консоль",
+            weight: 3.38, // kg
+          },
+          retroreflective: {
+            name: "Элемент световозвращающий ЭС, гор цинк",
+            link: "свет",
+            weight: 0.33, // kg
+          },
+          bolt1645: {
+            name: "Болт М16х45 7802, гор цинк",
+            link: "bolt45",
+            weight: 0.102, // kg
+          },
+          bolt1640: {
+            name: "Болт М16х40 7802, гор цинк",
+            link: "bolt40",
+            weight: 0.098, // kg
+          },
+          bolt1630: {
+            name: "Болт М16х30 7798, гор цинк",
+            weight: 0.0833, // kg
+          },
+          strew: {
+            name: "Гайка М16 5915, гор цинк",
+            link: "гайка",
+            weight: 0.037, // kg
+          },
+          spacer: {
+            name: "Шайба М20 11371, гор цинк",
+            link: "шайба",
+            weight: 0.016, // kg
+          }
+        }
       },
-      strut: {
-        name: "Стойка дорожная СД-1 (1,8 ГОСТ 2012)",
-        link: "стойка",
-        price: 1498, // ruble
-        weight: 18.7, // kg
-        count: 0,
-        totalPrice: 0,
-        totalWeight: 0
+      RoadFenceTwoWay: {
+        name: "Двустороннее дорожное ограждение",
+        nameSecond: "двусторонних дорожных ограждений",
+        balks: {
+          2320: {
+            name: "СБ-0 2320 мм",
+            fullname: "Секция балки СБ-0 3х2320 мм",
+            link: "балка2320",
+            length: 2,
+            price: 5168.1, // ruble
+            weight: 26, // kg
+            count: 0,
+            totalPrice: 0,
+            totalWeight: 0
+          },
+          3320: {
+            name: "СБ-3,3 3320 мм",
+            fullname: "Секция балки СБ-3,3 3х3320 мм",
+            link: "балка3320",
+            length: 4,
+            price: 5168.1, // ruble
+            weight: 37, // kg
+            count: 0,
+            totalPrice: 0,
+            totalWeight: 0
+          },
+          4320: {
+            name: "СБ-1 3х4320 мм",
+            fullname: "Секция балки СБ-1 3х4320 мм",
+            link: "балка4320",
+            length: 4,
+            price: 5168.1, // ruble
+            weight: 47.5, // kg
+            count: 0,
+            totalPrice: 0,
+            totalWeight: 0
+          },
+          5320: {
+            name: "СБ-5,3 5320 мм",
+            fullname: "Секция балки СБ-5,3 3х5320 мм",
+            link: "балка4320",
+            length: 4,
+            price: 5168.1, // ruble
+            weight: 59.1, // kg
+            count: 0,
+            totalPrice: 0,
+            totalWeight: 0
+          },
+          6320: {
+            name: "СБ-2 3х6320 мм",
+            fullname: "Секция балки СБ-2 3х6320 мм",
+            link: "балка6320",
+            length: 6,
+            price: 5168.1, // ruble
+            weight: 70.100, // kg
+            count: 0,
+            totalPrice: 0,
+            totalWeight: 0
+          }
+        },
+        products: {}
       },
-      bracket: {
-        name: "Консоль жесткая КЖ-18 (ГОСТ 2012)",
-        link: "консоль",
-        price: 299.6, // ruble
-        weight: 3.38, // kg
-        count: 0,
-        totalPrice: 0,
-        totalWeight: 0
-      },
-      retroreflective: {
-        name: "Элемент световозвращающий ЭС, гор цинк",
-        link: "свет",
-        price: 85.6, // ruble
-        weight: 0.33, // kg
-        count: 0,
-        totalPrice: 0,
-        totalWeight: 0
-      },
-      bolt1645: {
-        name: "Болт М16х45 7802, гор цинк",
-        link: "bolt45",
-        price: 16.6712186632572, // ruble
-        weight: 0.102, // kg
-        count: 0,
-        totalPrice: 0,
-        totalWeight: 0
-      },
-      bolt1640: {
-        name: "Болт М16х40 7802, гор цинк",
-        link: "bolt40",
-        price: 14.5336307441926, // ruble
-        weight: 0.098, // kg
-        count: 0,
-        totalPrice: 0,
-        totalWeight: 0
-      },
-      bolt1630: {
-        name: "Болт М16х30 7798, гор цинк",
-        price: 13.2756850247805, // ruble
-        weight: 0.0833, // kg
-        count: 0,
-        totalPrice: 0,
-        totalWeight: 0
-      },
-      strew: {
-        name: "Гайка М16 5915, гор цинк",
-        link: "гайка",
-        price: 5.58002245130064, // ruble
-        weight: 0.037, // kg
-        count: 0,
-        totalPrice: 0,
-        totalWeight: 0
-      },
-      spacer: {
-        name: "Шайба М20 11371, гор цинк",
-        link: "шайба",
-        price: 4.0330865646, // ruble
-        weight: 0.016, // kg
-        count: 0,
-        totalPrice: 0,
-        totalWeight: 0
+      BridgeFence: {
+        name: "Мостовое ограждение",
+        nameSecond: "мостовых дорожных ограждений",
+        balks: {
+          3320: {
+            name: "СБ-3,3 3320 мм",
+            fullname: "Секция балки СБ-3,3 3х3320 мм (0,5 м)",
+            link: "балка2320",
+            length: 2,
+            price: 5168.1, // ruble
+            weight: 37, // kg
+            count: 0,
+            totalPrice: 0,
+            totalWeight: 0
+          },
+          4320: {
+            name: "СБ-1 3х4320 мм",
+            fullname: "Секция балки СБ-1 3х4320 мм (0,5 м)",
+            link: "балка4320",
+            length: 4,
+            price: 5168.1, // ruble
+            weight: 47.5, // kg
+            count: 0,
+            totalPrice: 0,
+            totalWeight: 0
+          },
+          6320: {
+            name: "СБ-2 6320 мм",
+            fullname: "Секция балки СБ-2 3х6320 мм (0,5 м)",
+            link: "балка6320",
+            length: 6,
+            price: 5168.1, // ruble
+            weight: 70.100, // kg
+            count: 0,
+            totalPrice: 0,
+            totalWeight: 0
+          }
+        },
+        products: {}
       }
     }
   },
@@ -93,6 +191,13 @@ new Vue({
     }
   },
   methods: {
+    clearAll() {
+      this.currentProduct = {};
+      this.currentSсheme = {};
+      this.lenghtWorkSections = 0;
+      this.amountWorkSections = 0;
+      this.weight = 0;
+    },
     counter(product) {
       let count = 0;
       switch (product.link) {
@@ -123,10 +228,6 @@ new Vue({
       }
       return product.count;
     },
-    totalPrice(product) {
-      product.totalPrice = product.price * product.count;
-      return product.totalPrice;
-    },
     totalWeight(product) {
       product.totalWeight = product.weight * product.count;
       return product.totalWeight;
@@ -138,13 +239,6 @@ new Vue({
       }
       return weight;
     },
-    finalPrice() {
-      let price = 0;
-      for (let [key, value] of Object.entries(this.products)) {
-        price += value.totalPrice;
-      }
-      return price;
-    }
   },
   created: function() {
     // `this` указывает на экземпляр vm
