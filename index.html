@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./bulma.min.css" />
-    <link rel="stylesheet" href="./style.css" />
     <title>h3lpkey</title>
   </head>
   <body>
@@ -57,8 +56,8 @@
             <div class="field">
               <label class="label">Тип балки СБ</label>
               <div class="select">
-                <select>
-                  <option v-for="balk in currentSсheme.balks">{{balk.name}}</option>
+                <select v-model="selectBalk">
+                  <option :value="balk" v-for="balk in currentSсheme.balks">{{balk.name}}</option>
                 </select>
               </div>
             </div>
@@ -71,7 +70,7 @@
       </section>
       <section
         class="section"
-        v-if="lenghtWorkSections > 0 && amountWorkSections > 0"
+        v-if="lenghtWorkSections > 0 && amountWorkSections > 0 && Object.entries(currentSсheme).length > 0"
       >
         <div class="table-container">
           <table class="table is-fullwidth is-striped">
@@ -83,14 +82,14 @@
                 <th>Общий вес</th>
               </tr>
             </thead>
-            <!-- <tbody>
-              <tr v-for="product in products">
+            <tbody>
+              <tr v-for="product in currentProduct.products">
                 <td>{{product.name}}</td>
-                <td>{{counter(product).toFixed(2)}}</td>
-                <td>{{product.weight.toFixed(3)}}</td>
-                <td>{{totalWeight(product).toFixed(2)}}</td>
+                <td>0</td>
+                <td>{{product.weight}}</td>
+                <td>0</td>
               </tr>
-            </tbody> -->
+            </tbody>
           </table>
         </div>
       </section>

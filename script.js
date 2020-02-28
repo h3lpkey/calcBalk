@@ -1,10 +1,10 @@
 new Vue({
   el: "#app",
   data: {
-    lenghtWorkSections: 0,
-    amountWorkSections: 0,
+    lenghtWorkSections: 0, // TODO: set 0
+    amountWorkSections: 0, // TODO: set 0
+    selectBalk: {}, // TODO: set 0
     currentSсheme: {},
-    currentProduct: {},
     weight: 0,
     schemes: {
       RoadFence: {
@@ -34,12 +34,6 @@ new Vue({
           }
         },
         products: {
-          balk: {
-            name: "Секция балки СБ-0 3х2320 мм",
-            link: "балка",
-            length: 2,
-            weight: 26, // kg
-          },
           strut: {
             name: "Стойка дорожная СД-1 (1,8 ГОСТ 2012)",
             link: "стойка",
@@ -78,6 +72,11 @@ new Vue({
             name: "Шайба М20 11371, гор цинк",
             link: "шайба",
             weight: 0.016, // kg
+          },
+          spacerSquare: {
+            name: "Шайба прямоугольная ПШ (80x40x4)	",
+            link: "шайбаПрямоугольная",
+            weight: 0.07, // kg
           }
         }
       },
@@ -141,7 +140,48 @@ new Vue({
             totalWeight: 0
           }
         },
-        products: {}
+        products: {
+          strut: {
+            name: "Стойка дорожная СД-4 (1,8 ГОСТ 2012)",
+            link: "стойка",
+            weight: 22.1, // kg
+          },
+          bracket: {
+            name: "Консоль-распорка КР-14",
+            link: "консоль",
+            weight: 10.7, // kg
+          },
+          retroreflective: {
+            name: "Элемент световозвращающий ЭС",
+            link: "свет",
+            weight: 0.33, // kg
+          },
+          bolt1645: {
+            name: "Болт М16х45 7802",
+            link: "bolt45",
+            weight: 0.102, // kg
+          },
+          bolt1640: {
+            name: "Болт М16х40 7802",
+            link: "bolt40",
+            weight: 0.098, // kg
+          },
+          strew: {
+            name: "Гайка М16 5915",
+            link: "гайка",
+            weight: 0.037, // kg
+          },
+          spacer: {
+            name: "Шайба М20 11371",
+            link: "шайба",
+            weight: 0.016, // kg
+          },
+          spacerSquare: {
+            name: "Шайба прямоугольная ПШ (80x40x4)	",
+            link: "шайбаПрямоугольная",
+            weight: 0.07, // kg
+          }
+        }
       },
       BridgeFence: {
         name: "Мостовое ограждение",
@@ -181,7 +221,47 @@ new Vue({
             totalWeight: 0
           }
         },
-        products: {}
+        products: {
+          strut: {
+            name: "Стойка мостовая СМ-1 (ГОСТ 2012)",
+            link: "стойка",
+            weight: 16.3, // kg
+          },
+          bracket: {
+            name: "Консоль амортизатор нижний КН",
+            link: "консоль",
+            weight: 3.5, // kg
+          },
+          retroreflective: {
+            name: "Элемент световозвращающий ЭС",
+            link: "свет",
+            weight: 0.33, // kg
+          },
+          bolt1645: {
+            name: "Болт М16х45 ГОСТ 7802",
+            link: "bolt45",
+            weight: 0.102, // kg
+          },
+          bolt1640: {
+            name: "Болт М16х40 ГОСТ 7798",
+            link: "bolt40",
+            weight: 0.098, // kg
+          },
+          bolt1630: {
+            name: "Болт М20х70 ГОСТ 7798",
+            weight: 0.241, // kg
+          },
+          strew: {
+            name: "Гайка М16 ГОСТ 5915",
+            link: "гайка",
+            weight: 0.037, // kg
+          },
+          spacer: {
+            name: "Шайба 20 ГОСТ 11371",
+            link: "шайба",
+            weight: 0.016, // kg
+          }
+        }
       }
     }
   },
@@ -239,6 +319,45 @@ new Vue({
       }
       return weight;
     },
+    calcBalks() {
+      const mainBalk = this.selectBalk;
+      const ostatok = this.lenghtWorkSections % mainBalk.length;
+      let countMain = Math.floor(this.lenghtWorkSections / mainBalk.length);
+
+      let balks = {};
+
+      // если не нужны доп. балки
+      if (ostatok === 0) {
+        balks = mainBalk;
+        balks.count = countMain;
+        return balks
+      } else {
+        // разбираемся что за доп. балки будут
+        if (ostatok === 1) {
+          console.log("tyt osobii slu4ai");
+        }
+
+        const balksArr = this.currentSсheme.balks;
+        balksArr.forEach((balk) => {
+          console.log(balk.length);
+        });
+      }
+
+      return balks
+    }
+  },
+  computed: {
+    currentProduct() {
+      console.log(`aaa`, Object.entries(currentSсheme).length)
+      // const balks = this.calcBalks();
+      console.log(`надо балки`, balks)
+      let complect = {}
+      complect.balks = balks;
+      complect = Object.defineProperty(complect, "products", {
+        value: this.currentSсheme.products,
+      });
+      return complect;
+    }
   },
   created: function() {
     // `this` указывает на экземпляр vm
