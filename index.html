@@ -54,10 +54,22 @@
               </div>
             </div>
             <div class="field">
+              <label class="label">Тип ограждения</label>
+              <div class="select">
+                <select v-model="selectStrut">
+                  <option :value="strut" v-for="strut in currentSсheme.struts">
+                    {{strut.name}}
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
               <label class="label">Тип балки СБ</label>
               <div class="select">
                 <select v-model="selectBalk">
-                  <option :value="balk" v-for="balk in currentSсheme.balks">{{balk.name}}</option>
+                  <option :value="balk" v-for="balk in currentSсheme.balks">
+                    {{balk.name}}
+                  </option>
                 </select>
               </div>
             </div>
@@ -70,7 +82,7 @@
       </section>
       <section
         class="section"
-        v-if="lenghtWorkSections > 0 && amountWorkSections > 0 && Object.entries(currentSсheme).length > 0"
+        v-if="lenghtWorkSections >= 10 && amountWorkSections > 0 && Object.entries(currentSсheme).length > 0"
       >
         <div class="table-container">
           <table class="table is-fullwidth is-striped">
@@ -83,11 +95,11 @@
               </tr>
             </thead>
             <tbody>
-              <tr v-for="product in currentProduct.products">
-                <td>{{product.name}}</td>
-                <td>0</td>
+              <tr v-for="product in currentProduct">
+                <td>{{product.fullname}}</td>
+                <td>{{product.count}}</td>
                 <td>{{product.weight}}</td>
-                <td>0</td>
+                <td>{{(product.weight * product.count).toFixed(2)}}</td>
               </tr>
             </tbody>
           </table>
