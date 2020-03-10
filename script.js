@@ -301,7 +301,7 @@ const shemas = {
         fullname: "Консоль жесткая КЖ-18 (ГОСТ 2012)",
         type: "КЖ",
         weight: 3.38 // kg
-      },
+      }
     ],
     products: {
       retroreflective: {
@@ -318,11 +318,6 @@ const shemas = {
         name: "Болт М16х40 7802, гор цинк",
         fullname: "Болт М16х40 7802, гор цинк",
         weight: 0.098 // kg
-      },
-      bolt1630: {
-        name: "Болт М16х30 7798, гор цинк",
-        fullname: "Болт М16х30 7798, гор цинк",
-        weight: 0.0833 // kg
       },
       strew: {
         name: "Гайка М16 5915, гор цинк",
@@ -477,7 +472,7 @@ const shemas = {
       bolt1645: {
         name: "Болт М16х45 7802",
         fullname: "Болт М16х45 7802",
-        weight: 0.102 // kg
+        weight: 0.241 // kg
       },
       bolt1640: {
         name: "Болт М16х40 7802",
@@ -709,13 +704,18 @@ const shemas = {
         fullname: "Консоль жесткая КЖ-18 (ГОСТ 2012)",
         type: "КЖ",
         weight: 3.38 // kg
-      },
+      }
     ],
     products: {
       retroreflective: {
         name: "Элемент световозвращающий ЭС",
         fullname: "Элемент световозвращающий ЭС",
         weight: 0.33 // kg
+      },
+      bolt2070: {
+        name: "Болт М20х70 ГОСТ 7798",
+        fullname: "Болт М20х70 ГОСТ 7798",
+        weight: 0.102 // kg
       },
       bolt1645: {
         name: "Болт М16х45 ГОСТ 7802",
@@ -749,10 +749,10 @@ const shemas = {
 new Vue({
   el: "#app",
   data: {
-    lenghtWorkSections: 0, // TODO: set 0
-    amountWorkSections: 0, // TODO: set 0
-    selectBalk: {}, // TODO: set {}
-    selectStrut: {}, // TODO: set {}
+    lenghtWorkSections: 0,
+    amountWorkSections: 0,
+    selectBalk: {},
+    selectStrut: {},
     currentSсheme: {},
     weight: 0,
     schemes: shemas
@@ -849,22 +849,142 @@ new Vue({
         if (searchBraket.type == strut.type) {
           braket = searchBraket;
         }
-      })
+      });
       return braket;
     },
 
+    consumables(complect, balksCount) {
+      switch (this.currentSсheme.name) {
+        case "Односторонние дорожные ограждения":
+          // односторонка ====================================
+          // однаярустная
+          // болты 45 для односторонки КЖ КН КА
+          // балки * 8 + консоли + 8 (крайняя)
+          // болты 40 для односторонки КЖ = консоль * 1
+          // болты 40 для односторонки КН КА = консоль * 2
+          // гайки и шайбы = все болты сложить
+          // прямоугольные шайбы = болты 40
+          if (this.selectStrut.balksMultiply === 1) {
+            this.currentSсheme.products.bolt1645.count =
+              balksCount * 8 + complect.struts.count + 8;
+            if (this.selectStrut.type === "КЖ") {
+              this.currentSсheme.products.bolt1640.count =
+                complect.struts.count * 1;
+            } else {
+              this.currentSсheme.products.bolt1640.count =
+                complect.struts.count * 2;
+            }
+            this.currentSсheme.products.bolt1640.count =
+              complect.struts.count * 1;
+            this.currentSсheme.products.strew.count =
+              this.currentSсheme.products.bolt1645.count +
+              this.currentSсheme.products.bolt1640.count;
+            this.currentSсheme.products.spacer.count =
+              this.currentSсheme.products.bolt1645.count +
+              this.currentSсheme.products.bolt1640.count;
+            this.currentSсheme.products.spacerSquare.count = this.currentSсheme.products.bolt1640.count;
+          } else {
+            this.currentSсheme.products.bolt1645.count =
+              balksCount * 8 + complect.struts.count + 8 * 2;
+            this.currentSсheme.products.bolt1640.count =
+              complect.struts.count * 1;
+            this.currentSсheme.products.strew.count =
+              this.currentSсheme.products.bolt1645.count +
+              this.currentSсheme.products.bolt1640.count;
+            this.currentSсheme.products.spacer.count =
+              this.currentSсheme.products.bolt1645.count +
+              this.currentSсheme.products.bolt1640.count;
+            this.currentSсheme.products.spacerSquare.count = this.currentSсheme.products.bolt1640.count;
+          }
+
+          break;
+        case "Двустороннее дорожное ограждение":
+          // Для двусторонки ====================================
+          // КР14 КР16
+          // болт 45 = балки * 8 + консоли + (8 * 2)
+          // болт 40 = консоль * 3
+          // гайки и шайбы = все болты сложить
+          // прямоугольные шайбы = стойки * 2
+
+          // Для двусторонки КА
+          // болт 45 = балки * 8 + консоли * 2 (8 * 4)
+          // болт 40 = консоль * 2
+
+          // двуяростная КА (кж не существует)
+          // болты 45 для односторонки КА
+          // балки * 8 + консоли * 2 + 8 * 2 (крайняя)
+          // болты 40 для односторонки КЖ = консоль * 2
+          // гайки и шайбы = все болты сложить
+          // прямоугольные шайбы = болты 40
+          if (this.selectStrut.balksMultiply === 1) {
+            if (this.selectStrut.type === "КА") {
+              this.currentSсheme.products.bolt1645.count =
+                balksCount * 8 + complect.struts.count + 8 * 4;
+              this.currentSсheme.products.bolt1640.count =
+                complect.struts.count * 2;
+            } else {
+              this.currentSсheme.products.bolt1645.count =
+                balksCount * 8 + complect.struts.count + 8 * 2;
+              this.currentSсheme.products.bolt1640.count =
+                complect.struts.count * 3;
+            }
+
+            this.currentSсheme.products.strew.count =
+              this.currentSсheme.products.bolt1645.count +
+              this.currentSсheme.products.bolt1640.count;
+            this.currentSсheme.products.spacer.count =
+              this.currentSсheme.products.bolt1645.count +
+              this.currentSсheme.products.bolt1640.count;
+            this.currentSсheme.products.spacerSquare.count = complect.struts.count * 2;
+          } else {
+            if (this.selectStrut.type === "КА") {
+              this.currentSсheme.products.bolt1645.count =
+                balksCount * 8 + complect.struts.count * 2 + 8 * 4;
+              this.currentSсheme.products.bolt1640.count =
+                complect.struts.count * 2;
+            } else {
+              this.currentSсheme.products.bolt1645.count =
+                balksCount * 8 + complect.struts.count * 2 + 8 * 2;
+              this.currentSсheme.products.bolt1640.count =
+                complect.struts.count * 3;
+            }
+
+            this.currentSсheme.products.strew.count =
+              this.currentSсheme.products.bolt1645.count +
+              this.currentSсheme.products.bolt1640.count;
+            this.currentSсheme.products.spacer.count =
+              this.currentSсheme.products.bolt1645.count +
+              this.currentSсheme.products.bolt1640.count;
+            this.currentSсheme.products.spacerSquare.count = complect.struts.count * 2;
+          }
+          break;
+        case "Мостовое ограждение":
+          // мостовое   =========================================
+          // CM1 CM2 CM7 CM8 КА
+          // болты 45 для односторонки КЖ КН КА
+          // балки * 8 + консоли + 8 (крайняя)
+          // болты 40 для односторонки КН КА = консоль * 2
+          // болты 70 для односторонки КН КА = консоль * 4
+          // гайки и шайбы = все болты сложить
+          // прямоугольные шайбы = болты 40 + болты 45
+          break;
+      }
+    }
   },
   computed: {
     currentProduct() {
       let complect = {};
+      let balksCount = 0;
 
       this.calcBalks().forEach((balk, index) => {
         complect["balk" + index] = balk;
+        balksCount += balk.count;
       });
 
       complect.struts = this.calcStrut();
       complect.bracket = this.calcBrackets(complect.struts);
       complect.bracket.count = complect.struts.count;
+      this.consumables(complect, balksCount);
 
       for (let [key, value] of Object.entries(this.currentSсheme.products)) {
         complect[key] = value;
@@ -877,12 +997,6 @@ new Vue({
       } else {
         complect.retroreflective.count = Math.ceil(this.lenghtWorkSections / 4);
       }
-
-      // посчитаем болты 45 для односторонки КА
-      // консоль * 8 + коносли, но если двуярустная то консоль * 8
-      // посчитаем болты 40 для односторонки
-      // консоль * 2
-      // КЖ ебал я это покачто
 
       console.log(complect);
       return complect;
