@@ -8,6 +8,16 @@
   </head>
   <body>
     <div id="app" class="container">
+      <div class="tags are-large">
+        <span
+          class="tag"
+          style="cursor: pointer; margin: 0px;"
+          v-bind:class="selectType == type ? 'is-info' : ''"
+          v-for="type in types"
+          @click="selectSchemas(type)"
+          >{{type}}</span
+        >
+      </div>
       <section
         class="section notification"
         v-if="Object.entries(currentSсheme).length === 0"
@@ -30,7 +40,7 @@
         v-if="Object.entries(currentSсheme).length !== 0"
       >
         <h1 class="title">Расчет {{currentSсheme.nameSecond}}</h1>
-        <h2 class="subtitle">по ГОСТ 2012</h2>
+        
         <div class="field is-horizontal">
           <div class="field-body">
             <div class="field">
@@ -75,7 +85,7 @@
             </div>
           </div>
         </div>
-        <p v-if="weight > 0">Общий вес: {{finalWeight()}}</p>
+        <p v-if="weight > 0">Общий вес: {{weight.toFixed(2)}}</p>
         <button class="button is-danger" @click="clearAll()">
           Сброс
         </button>
@@ -95,7 +105,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr v-for="product in currentProduct">
+              <tr v-for="product in currentProduct" v-if="product.count > 0">
                 <td>{{product.fullname}}</td>
                 <td>{{product.count}}</td>
                 <td>{{product.weight}}</td>

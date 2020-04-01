@@ -1,4 +1,4 @@
-const shemas = {
+const shemasGOST = {
   RoadFence: {
     name: "Односторонние дорожные ограждения",
     nameSecond: "односторонних дорожных ограждений",
@@ -286,7 +286,7 @@ const shemas = {
         type: "КА",
         balksMultiply: 2,
         weight: 30.8,
-        step: 1.5
+        step: 1
       }
     ],
     brackets: [
@@ -746,6 +746,1049 @@ const shemas = {
   }
 };
 
+const shemasTY = {
+  RoadFence: {
+    name: "Односторонние дорожные ограждения",
+    nameSecond: "односторонних дорожных ограждений",
+    balks: [
+      {
+        name: "СБ-0 2320 мм",
+        fullname: "Секция балки СБ-0 3х2320 мм",
+        link: "балка2320",
+        length: 2,
+        weight: 26 // kg
+      },
+      {
+        name: "СБ-3,3  3х3320 мм",
+        fullname: "Секция балки СБ-3,3 3х3320 мм",
+        link: "балка4320",
+        length: 3,
+        weight: 37 // kg
+      },
+      {
+        name: "СБ-1 3х4320 мм",
+        fullname: "Секция балки СБ-1 3х4320 мм",
+        link: "балка4320",
+        length: 4,
+        weight: 47.5 // kg
+      },
+      {
+        name: "СБ-5,3 3х5320 мм",
+        fullname: "Секция балки СБ-5,3 3х5320 мм",
+        link: "балка5320",
+        length: 5,
+        weight: 59.1 // kg
+      },
+      {
+        name: "СБ-2 3х6320 мм",
+        fullname: "Секция балки СБ-2 3х6320 мм",
+        link: "балка6320",
+        length: 6,
+        weight: 70.1 // kg
+      }
+    ],
+    struts: [
+      {
+        name: "11-ДО(КЖ) У1 3 СД-Ш12",
+        fullname: "Стойка дорожная СД-Ш12",
+        type: "КЖ",
+        balksMultiply: 1,
+        weight: 17.2,
+        step: 1
+      },
+      {
+        name: "11-ДО (КЖ) У1 4 СД-Ш12",
+        fullname: "Стойка дорожная СД-Ш12",
+        type: "КЖ",
+        balksMultiply: 1,
+        weight: 17.2,
+        step: 2
+      },
+      {
+        name: "11-ДО (КЖ) У2 4 СД-Ш12",
+        fullname: "Стойка дорожная СД-Ш12",
+        type: "КЖ",
+        balksMultiply: 1,
+        weight: 17.2,
+        step: 1.5
+      },
+      {
+        name: "11-ДО (КЖ) У2 4 СД-Ш14",
+        fullname: "Стойка дорожная СД-Ш14",
+        type: "КЖ",
+        balksMultiply: 1,
+        weight: 18.7,
+        step: 2
+      },
+      {
+        name: "11-ДО (КЖ) У3 4 СД-Ш14",
+        fullname: "Стойка дорожная СД-Ш14",
+        type: "КЖ",
+        balksMultiply: 1,
+        weight: 18.7,
+        step: 1
+      },
+      {
+        name: "11-ДО (КЖ) У3 4 СД-Ш16",
+        fullname: "Стойка дорожная СД-Ш16",
+        type: "КЖ",
+        balksMultiply: 1,
+        weight: 23.3,
+        step: 2
+      },
+      {
+        name: "11-ДО (КЖ) У3 4 СД-С100",
+        fullname: "Стойка дорожная СД-С100",
+        type: "КЖ",
+        balksMultiply: 1,
+        weight: 18.7,
+        step: 2
+      },
+      {
+        name: "11-ДО (КЖ) У4 3 СД-Ш16",
+        fullname: "Стойка дорожная СД-Ш16",
+        type: "КЖ",
+        balksMultiply: 1,
+        weight: 23.3,
+        step: 1.5
+      },
+      {
+        name: "11-ДО (КЖ) У4 3 СД-С100",
+        fullname: "Стойка дорожная СД-С100",
+        type: "КЖ",
+        balksMultiply: 1,
+        weight: 18.7,
+        step: 1.5
+      },
+      {
+        name: "11-ДО (КЖ) У4 4 СД-Ш14",
+        fullname: "Стойка дорожная СД-Ш14",
+        type: "КЖ",
+        balksMultiply: 1,
+        weight: 18.7,
+        step: 1
+      },
+      {
+        name: "11-ДО (КЖ) У4 3 СД-С120",
+        fullname: "Стойка дорожная СД-С120",
+        type: "КЖ",
+        balksMultiply: 1,
+        weight: 18.7,
+        step: 1
+      },
+      {
+        name: "11-ДО (КЖ) У4 3 СД-Ш16",
+        fullname: "Стойка дорожная СД-Ш16",
+        type: "КЖ",
+        balksMultiply: 1,
+        weight: 23.3,
+        step: 2
+      },
+      {
+        name: "11-ДО (КЖ) У4 3 СД-С100",
+        fullname: "Стойка дорожная СД-С100",
+        type: "КЖ",
+        balksMultiply: 1,
+        weight: 18.7,
+        step: 2
+      },
+      {
+        name: "11-ДД (КР) У4 3 СД-Ш14",
+        fullname: "Стойка дорожная СД-Ш14",
+        type: "КЖ",
+        balksMultiply: 1,
+        weight: 18.7,
+        step: 1
+      },
+      {
+        name: "11-ДД (КР) У4 3 СД-С100",
+        fullname: "Стойка дорожная СД-С100",
+        type: "КЖ",
+        balksMultiply: 1,
+        weight: 18.7,
+        step: 1
+      },
+      {
+        name: "11-ДД (КР) У4 3 СД-Ш16",
+        fullname: "Стойка дорожная СД-Ш16",
+        type: "КЖ",
+        balksMultiply: 1,
+        weight: 23.3,
+        step: 2
+      },
+      {
+        name: "11-ДД (КР) У4 4 СД-Ш14",
+        fullname: "Стойка дорожная СД-Ш14",
+        type: "КЖ",
+        balksMultiply: 1,
+        weight: 18.7,
+        step: 1
+      },
+      {
+        name: "11-ДО (КА) У1 3 СД-Ш12",
+        fullname: "Стойка дорожная СД-Ш12",
+        type: "КА",
+        balksMultiply: 1,
+        weight: 17.2,
+        step: 3
+      },
+      {
+        name: "11-ДО (КА) У2 3 СД-Ш12",
+        fullname: "Стойка дорожная СД-Ш12",
+        type: "КА",
+        balksMultiply: 1,
+        weight: 17.2,
+        step: 2
+      },
+      {
+        name: "11-ДО (КА) У2 3 СД-С120",
+        fullname: "Стойка дорожная С-120",
+        type: "КА",
+        balksMultiply: 1,
+        weight: 18.7,
+        step: 2
+      },
+      {
+        name: "11-ДО (КА) У2 3 СД-Ш16",
+        fullname: "Стойка дорожная СД-Ш16",
+        type: "КА",
+        balksMultiply: 1,
+        weight: 23.3,
+        step: 3
+      },
+      {
+        name: "11-ДО (КА) У3 3 СД-Ш12",
+        fullname: "Стойка дорожная СД-Ш12",
+        type: "КА",
+        balksMultiply: 1,
+        weight: 17.2,
+        step: 1
+      },
+      {
+        name: "11-ДО (КА) У3 3 СД-С120",
+        fullname: "Стойка дорожная СД-С120",
+        type: "КА",
+        balksMultiply: 1,
+        weight: 18.7,
+        step: 1
+      },
+      {
+        name: "11-ДО (КА) У3 4 СД-Ш12",
+        fullname: "Стойка дорожная СД-Ш12",
+        type: "КА",
+        balksMultiply: 1,
+        weight: 17.2,
+        step: 2
+      },
+      {
+        name: "11-ДО (КА) У3 4 СД-Ш16",
+        fullname: "Стойка дорожная СД-Ш16",
+        type: "КА",
+        balksMultiply: 1,
+        weight: 23.3,
+        step: 3
+      },
+      {
+        name: "11-ДО (КА) У4 4 СД-Ш12",
+        fullname: "Стойка дорожная СД-Ш12",
+        type: "КА",
+        balksMultiply: 1,
+        weight: 17.2,
+        step: 1
+      },
+      {
+        name: "11-ДО (КА) У4 4 СД-Ш16",
+        fullname: "Стойка дорожная СД-Ш16",
+        type: "КА",
+        balksMultiply: 1,
+        weight: 23.3,
+        step: 2
+      },
+      {
+        name: "11-ДО (УБ)(КА) У4 3 СД-Д12",
+        fullname: "Стойка дорожная СД-Д12",
+        type: "КА",
+        balksMultiply: 1,
+        weight: 18.7,
+        step: 2
+      },
+      {
+        name: "11-ДО (УБ)(КА) У4 4 СД-Д14",
+        fullname: "Стойка дорожная СД-Д14",
+        type: "КА",
+        balksMultiply: 1,
+        weight: 18.7,
+        step: 2.5
+      },
+      {
+        name: "11-ДО (УБ)(КА) У5 3 СД-Д12",
+        fullname: "Стойка дорожная СД-Д12",
+        type: "КА",
+        balksMultiply: 2,
+        weight: 18.7,
+        step: 1.5
+      },
+      {
+        name: "11-ДО (УБ)(КА) У5 3 СД-Ш16",
+        fullname: "Стойка дорожная СД-Ш16",
+        type: "КА",
+        balksMultiply: 2,
+        weight: 23.3,
+        step: 2
+      },
+      {
+        name: "11-ДО (УБ)(КА) У6 4 СД-Д12",
+        fullname: "Стойка дорожная СД-Д12",
+        type: "КА",
+        balksMultiply: 2,
+        weight: 18.7,
+        step: 1.5
+      },
+      {
+        name: "11-ДО (УБ)(КА) У6 4 СД-Ш14",
+        fullname: "Стойка дорожная СД-Ш14",
+        type: "КА",
+        balksMultiply: 2,
+        weight: 18.7,
+        step: 1.5
+      },
+      {
+        name: "11-ДО (УБ)(КА) У6 4 СД-Д14",
+        fullname: "Стойка дорожная СД-Д14",
+        type: "КА",
+        balksMultiply: 2,
+        weight: 18.7,
+        step: 2
+      },
+      {
+        name: "11-ДО (УБ)(КА) У7 4 СД-Ш16",
+        fullname: "Стойка дорожная СД-Ш16",
+        type: "КА",
+        balksMultiply: 2,
+        weight: 23.3,
+        step: 2
+      },
+      {
+        name: "11-ДО (УБ)(КА) У7 4 СД-Д12",
+        fullname: "Стойка дорожная СД-Д12",
+        type: "КА",
+        balksMultiply: 2,
+        weight: 18.7,
+        step: 1
+      },
+      {
+        name: "11-ДО (УБ)(КА) У7 4 СД-Ш14",
+        fullname: "Стойка дорожная СД-Ш14",
+        type: "КА",
+        balksMultiply: 2,
+        weight: 18.7,
+        step: 1
+      },
+    ],
+    brackets: [
+      {
+        name: "Консоль амортизатор нижний КН",
+        fullname: "Консоль амортизатор нижний КН",
+        type: "КА",
+        weight: 3.5 // kg
+      },
+      {
+        name: "Консоль жесткая КЖ-18 (ГОСТ 2012)",
+        fullname: "Консоль жесткая КЖ-18 (ГОСТ 2012)",
+        type: "КЖ",
+        weight: 3.38 // kg
+      }
+    ],
+    products: {
+      retroreflective: {
+        name: "Элемент световозвращающий ЭС, гор цинк",
+        fullname: "Элемент световозвращающий ЭС, гор цинк",
+        weight: 0.33 // kg
+      },
+      bolt1645: {
+        name: "Болт М16х45 7802, гор цинк",
+        fullname: "Болт М16х45 7802, гор цинк",
+        weight: 0.102 // kg
+      },
+      bolt1640: {
+        name: "Болт М16х40 7802, гор цинк",
+        fullname: "Болт М16х40 7802, гор цинк",
+        weight: 0.098 // kg
+      },
+      strew: {
+        name: "Гайка М16 5915, гор цинк",
+        fullname: "Гайка М16 5915, гор цинк",
+        weight: 0.037 // kg
+      },
+      spacer: {
+        name: "Шайба М20 11371, гор цинк",
+        fullname: "Шайба М20 11371, гор цинк",
+        weight: 0.016 // kg
+      },
+      spacerSquare: {
+        name: "Шайба прямоугольная ПШ (80x40x4)	",
+        fullname: "Шайба прямоугольная ПШ (80x40x4)	",
+        weight: 0.07 // kg
+      }
+    }
+  },
+  RoadFenceTwoWay: {
+    name: "Двустороннее дорожное ограждение",
+    nameSecond: "двусторонних дорожных ограждений",
+    balks: [
+      {
+        name: "СБ-0 2320 мм",
+        fullname: "Секция балки СБ-0 3х2320 мм",
+        link: "балка2320",
+        length: 2,
+        weight: 26 // kg
+      },
+      {
+        name: "СБ-3,3 3320 мм",
+        fullname: "Секция балки СБ-3,3 3х3320 мм",
+        link: "балка3320",
+        length: 3,
+        price: 5168, // ruble
+        weight: 37 // kg
+      },
+      {
+        name: "СБ-1 3х4320 мм",
+        fullname: "Секция балки СБ-1 3х4320 мм",
+        link: "балка4320",
+        length: 4,
+        weight: 47.5 // kg
+      },
+      {
+        name: "СБ-5,3 5320 мм",
+        fullname: "Секция балки СБ-5,3 3х5320 мм",
+        link: "балка4320",
+        length: 5,
+        weight: 59.1 // kg
+      },
+      {
+        name: "СБ-2 3х6320 мм",
+        fullname: "Секция балки СБ-2 3х6320 мм",
+        link: "балка6320",
+        length: 6,
+        weight: 70.1 // kg
+      }
+    ],
+    struts: [
+      {
+        name: "11-ДД (КА) У1 3 СД-Ш12",
+        fullname: "Стойка дорожная СД-Ш12",
+        type: "КА",
+        balksMultiply: 1,
+        weight: 17.2,
+        step: 4
+      },
+      {
+        name: "11-ДД (КА) У2 3 СД-Ш12",
+        fullname: "Стойка дорожная СД-Ш12",
+        type: "КА",
+        balksMultiply: 1,
+        weight: 17.2,
+        step: 3
+      },
+      {
+        name: "11-ДД (КА) У3 3 СД-Ш12",
+        fullname: "Стойка дорожная СД-Ш12",
+        type: "КА",
+        balksMultiply: 1,
+        weight: 17.2,
+        step: 2
+      },
+      {
+        name: "11-ДД (КА) У4 3 СД-Ш16",
+        fullname: "Стойка дорожная СД-Ш16",
+        type: "КА",
+        balksMultiply: 1,
+        weight: 23.3,
+        step: 3
+      },
+      {
+        name: "11-ДД (КА) У4 4 СД-Ш14",
+        fullname: "Стойка дорожная СД-Ш14",
+        type: "КА",
+        balksMultiply: 1,
+        weight: 22.1,
+        step: 2
+      },
+      {
+        name: "11-ДД (УБ)(КА) У5 3 СД-Ш14",
+        fullname: "Стойка дорожная СД-Ш14",
+        type: "КА",
+        balksMultiply: 2,
+        weight: 22.1,
+        step: 2
+      },
+      {
+        name: "11-ДД (УБ)(КА) У5 3 СД-Ш16",
+        fullname: "Стойка дорожная СД-Ш16",
+        type: "КА",
+        balksMultiply: 2,
+        weight: 23.3,
+        step: 3
+      },
+      {
+        name: "11-ДД (УБ)(КА) У6 3 СД-Ш16",
+        fullname: "Стойка дорожная СД-Ш16",
+        type: "КА",
+        balksMultiply: 2,
+        weight: 23.3,
+        step: 2
+      },
+      {
+        name: "11-ДД (УБ)(КА) У7 4 СД-Ш16",
+        fullname: "Стойка дорожная СД-Ш16",
+        type: "КА",
+        balksMultiply: 2,
+        weight: 23.3,
+        step: 1.5
+      },
+      {
+        name: "11-ДД (УБ)(КА) У7 4 СД-Д16",
+        fullname: "Стойка дорожная СД-Д16",
+        type: "КА",
+        balksMultiply: 2,
+        weight: 22.1,
+        step: 3
+      }
+    ],
+    brackets: [
+      {
+        name: "Консоль-распорка КР-14",
+        fullname: "Консоль-распорка КР-14",
+        type: "КР-14",
+        weight: 10.7 // kg
+      },
+      {
+        name: "Консоль-распорка КР-16",
+        fullname: "Консоль-распорка КР-16",
+        type: "КР-16",
+        weight: 11.8 // kg
+      },
+      {
+        name: "Консоль амортизатор нижний КН",
+        fullname: "Консоль амортизатор нижний КН",
+        type: "КА",
+        weight: 3.5 // kg
+      }
+    ],
+    products: {
+      retroreflective: {
+        name: "Элемент световозвращающий ЭС",
+        fullname: "Элемент световозвращающий ЭС",
+        weight: 0.33 // kg
+      },
+      bolt1645: {
+        name: "Болт М16х45 7802",
+        fullname: "Болт М16х45 7802",
+        weight: 0.241 // kg
+      },
+      bolt1640: {
+        name: "Болт М16х40 7802",
+        fullname: "Болт М16х40 7802",
+        weight: 0.098 // kg
+      },
+      strew: {
+        name: "Гайка М16 5915",
+        fullname: "Гайка М16 5915",
+        weight: 0.037 // kg
+      },
+      spacer: {
+        name: "Шайба М20 11371",
+        fullname: "Шайба М20 11371",
+        weight: 0.016 // kg
+      },
+      spacerSquare: {
+        name: "Шайба прямоугольная ПШ (80x40x4)	",
+        fullname: "Шайба прямоугольная ПШ (80x40x4)	",
+        weight: 0.07 // kg
+      }
+    }
+  },
+  BridgeFence: {
+    name: "Мостовое ограждение",
+    nameSecond: "мостовых дорожных ограждений",
+    balks: [
+      {
+        name: "СБ-0 2320 мм",
+        fullname: "Секция балки СБ-0 3х2320 мм",
+        link: "балка2320",
+        length: 2,
+        weight: 26 // kg
+      },
+      {
+        name: "СБ-3,3 3х3320 мм",
+        fullname: "Секция балки СБ-3,3 3х3320 мм	",
+        link: "балка3320",
+        length: 3,
+        weight: 37 // kg
+      },
+      {
+        name: "СБ-1 3х4320 мм",
+        fullname: "Секция балки СБ-1 3х4320 мм (0,5 м)",
+        link: "балка4320",
+        length: 4,
+        weight: 47.5 // kg
+      },
+      {
+        name: "СБ-5,3 3х5320 мм",
+        fullname: "Секция балки СБ-5,3 3х5320 мм",
+        link: "балка6320",
+        length: 5,
+        weight: 59.1 // kg
+      },
+      {
+        name: "СБ-2 6320 мм",
+        fullname: "Секция балки СБ-2 3х6320 мм (0,5 м)",
+        link: "балка6320",
+        length: 6,
+        weight: 70.1 // kg
+      }
+    ],
+    struts: [
+      {
+        name: "11-МО У1 3 СМ-1",
+        fullname: "Стойка мостовая СМ-1",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 3
+      },
+      {
+        name: "11-МО У1 4 СМ-1",
+        fullname: "Стойка мостовая СМ-1",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 2.5
+      },
+      {
+        name: "11-МО У1 4 СМ-2",
+        fullname: "Стойка мостовая СМ-2",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 3
+      },
+      {
+        name: "11-МО У1 4 СМ-2",
+        fullname: "Стойка мостовая СМ-2",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 4
+      },
+      {
+        name: "11-МО У1 4 СМ-С120",
+        fullname: "Стойка мостовая СМ-С120",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 4
+      },
+      {
+        name: "11-МО У2 3 СМ-1",
+        fullname: "Стойка мостовая СМ-1",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1.5
+      },
+      {
+        name: "11-МО У2 3 СМ-2",
+        fullname: "Стойка мостовая СМ-2",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 2
+      },
+      {
+        name: "11-МО У2 3 СМ-120",
+        fullname: "Стойка мостовая СМ-120",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 2
+      },
+      {
+        name: "11-МО У2 4 СМ-1",
+        fullname: "Стойка мостовая СМ-1",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1.5
+      },
+      {
+        name: "11-МО У2 4 СМ-2",
+        fullname: "Стойка мостовая СМ-2",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 2
+      },
+      {
+        name: "11-МО У3 3 СМ-1",
+        fullname: "Стойка мостовая СМ-1",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1
+      },
+      {
+        name: "11-МО У3 3 СМ-2",
+        fullname: "Стойка мостовая СМ-2",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1
+      },
+      {
+        name: "11-МО У3 4 СМ-2",
+        fullname: "Стойка мостовая СМ-2",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1.5
+      },
+      {
+        name: "11-МО У4 4 СМ-2",
+        fullname: "Стойка мостовая СМ-2",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1
+      },
+      {
+        name: "11-МО У4 4 СМ-3",
+        fullname: "Стойка мостовая СМ-3",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1.5
+      },
+      {
+        name: "11-МД У4 4 СМ-1",
+        fullname: "Стойка мостовая СМ-1",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1
+      },
+      {
+        name: "11-МД У4 4 СМ-2",
+        fullname: "Стойка мостовая СМ-2",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1.5
+      },
+      {
+        name: "11-МД У4 4 СМ-3",
+        fullname: "Стойка мостовая СМ-3",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 2
+      },
+      {
+        name: "11-МО (УБ) У2 3 СМ-7",
+        fullname: "Стойка мостовая СМ-7",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 3
+      },
+      {
+        name: "11-МО (УБ) У2 3 СМ-8",
+        fullname: "Стойка мостовая СМ-8",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 4
+      },
+      {
+        name: "11-МО (УБ) У3 3 СМ-7",
+        fullname: "Стойка мостовая СМ-7",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 2
+      },
+      {
+        name: "11-МО (УБ) У3 3 СМ-8",
+        fullname: "Стойка мостовая СМ-8",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 2.5
+      },
+      {
+        name: "11-МО (УБ) У4 4 СМ-7",
+        fullname: "Стойка мостовая СМ-7",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1.5
+      },
+      {
+        name: "11-МО (УБ) У4 4 СМ-8",
+        fullname: "Стойка мостовая СМ-8",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 2
+      },
+      {
+        name: "11-МО (УБ) У5 4 СМ-9",
+        fullname: "Стойка мостовая СМ-9",
+        balksMultiply: 2,
+        weight: 16.3,
+        step: 2
+      },
+      {
+        name: "11-МО (УБ) У6 4 СМ-9",
+        fullname: "Стойка мостовая СМ-9",
+        balksMultiply: 2,
+        weight: 16.3,
+        step: 1.5
+      },
+      {
+        name: "11-МО (УБ) У7 4 СМ-9",
+        fullname: "Стойка мостовая СМ-9",
+        balksMultiply: 2,
+        weight: 16.3,
+        step: 1.5
+      },
+      {
+        name: "11-МД (УБ) У5 4 СМ-7",
+        fullname: "Стойка мостовая СМ-7",
+        balksMultiply: 2,
+        weight: 16.3,
+        step: 2
+      },
+      {
+        name: "11-МД (УБ) У6 4 СМ-8",
+        fullname: "Стойка мостовая СМ-8",
+        balksMultiply: 2,
+        weight: 16.3,
+        step: 1.5
+      },
+      {
+        name: "15-МО (К) У1 3 СМ-4",
+        fullname: "Стойка мостовая СМ-4",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 2
+      },
+      {
+        name: "15-МО (К) У1 4 СМ-5",
+        fullname: "Стойка мостовая СМ-5",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 3
+      },
+      {
+        name: "15-МО (К) У2 3 СМ-4",
+        fullname: "Стойка мостовая СМ-4",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1
+      },
+      {
+        name: "15-МО (К) У2 3 СМ-5",
+        fullname: "Стойка мостовая СМ-5",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1.5
+      },
+      {
+        name: "15-МО (К) У2 4 СМ-6",
+        fullname: "Стойка мостовая СМ-6",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 2
+      },
+      {
+        name: "15-МО (К) У3 4 СМ-6",
+        fullname: "Стойка мостовая СМ-6",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1.5
+      },
+      {
+        name: "15-МО (К) У1 3 СМ-4",
+        fullname: "Стойка мостовая СМ-4",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 2
+      },
+      {
+        name: "15-МО (К) У2 3 СМ-4",
+        fullname: "Стойка мостовая СМ-4",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1
+      },
+      {
+        name: "15-МО (К) У2 3 СМ-4",
+        fullname: "Стойка мостовая СМ-4",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1.5
+      },
+      {
+        name: "15-МО (К) У3 4 СМ-5",
+        fullname: "Стойка мостовая СМ-4",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1
+      },
+      {
+        name: "15-МО (К) У3 4 СМ-6",
+        fullname: "Стойка мостовая СМ-6",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1.5
+      },
+      {
+        name: "15-МО (К) У4 4 СМ-5",
+        fullname: "Стойка мостовая СМ-4",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1
+      },
+      {
+        name: "15-МО (К) У4 4 СМ-6",
+        fullname: "Стойка мостовая СМ-6",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1.5
+      },
+      {
+        name: "15-МО (К) У5 4 СМ-6",
+        fullname: "Стойка мостовая СМ-6",
+        balksMultiply: 2,
+        weight: 16.3,
+        step: 1
+      },
+      {
+        name: "15-МД (К) У3 4 СМ-4",
+        fullname: "Стойка мостовая СМ-4",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1
+      },
+      {
+        name: "15-МД (К) У3 4 СМ-5",
+        fullname: "Стойка мостовая СМ-5",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1.5
+      },
+      {
+        name: "15-МД (К) У3 4 СМ-6",
+        fullname: "Стойка мостовая СМ-6",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 2
+      },
+      {
+        name: "15-МД (К) У4 4 СМ-6",
+        fullname: "Стойка мостовая СМ-6",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1
+      },
+      {
+        name: "15-МД (К) У3 4 СМ-5",
+        fullname: "Стойка мостовая СМ-5",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1.5
+      },
+      {
+        name: "15-МД (К) У3 4 СМ-6",
+        fullname: "Стойка мостовая СМ-6",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 2
+      },
+      {
+        name: "15-МД (К) У4 4 СМ-5",
+        fullname: "Стойка мостовая СМ-5",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1
+      },
+      {
+        name: "15-МД (К) У4 4 СМ-6",
+        fullname: "Стойка мостовая СМ-6",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1.5
+      },
+      {
+        name: "15-МД (К) У4 3 СМ-4",
+        fullname: "Стойка мостовая СМ-4",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1
+      },
+      {
+        name: "15-МД (К) У4 3 СМ-5",
+        fullname: "Стойка мостовая СМ-5",
+        balksMultiply: 1,
+        weight: 16.3,
+        step: 1.5
+      },
+      {
+        name: "15-МД (К) У5 3 СМ-5",
+        fullname: "Стойка мостовая СМ-5",
+        balksMultiply: 2,
+        weight: 16.3,
+        step: 1
+      },
+      {
+        name: "15-МД (К) У5 3 СМ-6",
+        fullname: "Стойка мостовая СМ-6",
+        balksMultiply: 2,
+        weight: 16.3,
+        step: 1.5
+      },
+    ],
+    brackets: [
+      {
+        name: "Консоль амортизатор нижний КН",
+        fullname: "Консоль амортизатор нижний КН",
+        type: "КА",
+        weight: 3.5 // kg
+      },
+      {
+        name: "Консоль жесткая КЖ-18 (ГОСТ 2012)",
+        fullname: "Консоль жесткая КЖ-18 (ГОСТ 2012)",
+        type: "КЖ",
+        weight: 3.38 // kg
+      }
+    ],
+    products: {
+      retroreflective: {
+        name: "Элемент световозвращающий ЭС",
+        fullname: "Элемент световозвращающий ЭС",
+        weight: 0.33 // kg
+      },
+      bolt2070: {
+        name: "Болт М20х70 ГОСТ 7798",
+        fullname: "Болт М20х70 ГОСТ 7798",
+        weight: 0.102 // kg
+      },
+      bolt1645: {
+        name: "Болт М16х45 ГОСТ 7802",
+        fullname: "Болт М16х45 ГОСТ 7802",
+        weight: 0.102 // kg
+      },
+      bolt1640: {
+        name: "Болт М16х40 ГОСТ 7798",
+        fullname: "Болт М16х40 ГОСТ 7798",
+        weight: 0.098 // kg
+      },
+      bolt1630: {
+        name: "Болт М20х70 ГОСТ 7798",
+        fullname: "Болт М20х70 ГОСТ 7798",
+        weight: 0.241 // kg
+      },
+      strew: {
+        name: "Гайка М16 ГОСТ 5915",
+        fullname: "Гайка М16 ГОСТ 5915",
+        weight: 0.037 // kg
+      },
+      spacer: {
+        name: "Шайба 20 ГОСТ 11371",
+        fullname: "Шайба 20 ГОСТ 11371",
+        weight: 0.016 // kg
+      }
+    }
+  }
+};
+
 new Vue({
   el: "#app",
   data: {
@@ -755,7 +1798,9 @@ new Vue({
     selectStrut: {},
     currentSсheme: {},
     weight: 0,
-    schemes: shemas
+    schemes: shemasGOST,
+    types: ["ГОСТ", "ТУ"],
+    selectType: ""
   },
   methods: {
     clearAll() {
@@ -764,6 +1809,24 @@ new Vue({
       this.lenghtWorkSections = 0;
       this.amountWorkSections = 0;
       this.weight = 0;
+    },
+
+    selectSchemas(type) {
+      switch (type) {
+        case "ГОСТ":
+          this.schemes = shemasGOST;
+          this.selectType = "ГОСТ";
+          break;
+        case "ТУ":
+          this.schemes = shemasTY;
+          this.selectType = "ТУ";
+          break;
+        default:
+          this.schemes = shemasGOST;
+          this.selectType = "ГОСТ";
+          break;
+      }
+      this.clearAll();
     },
 
     calcBalks() {
@@ -884,17 +1947,25 @@ new Vue({
               this.currentSсheme.products.bolt1640.count;
             this.currentSсheme.products.spacerSquare.count = this.currentSсheme.products.bolt1640.count;
           } else {
-            this.currentSсheme.products.bolt1645.count =
-              balksCount * 8 + complect.struts.count + 8 * 2;
-            this.currentSсheme.products.bolt1640.count =
-              complect.struts.count * 1;
+            if (this.selectStrut.type === "КЖ") {
+              this.currentSсheme.products.bolt1645.count =
+                balksCount * 8 + complect.struts.count + 8 * 2;
+              this.currentSсheme.products.bolt1640.count =
+                complect.struts.count * 1;
+              this.currentSсheme.products.spacerSquare.count = this.currentSсheme.products.bolt1640.count;
+            } else {
+              this.currentSсheme.products.bolt1645.count =
+                balksCount * 8 + complect.struts.count * 4 + 8 * 2;
+              this.currentSсheme.products.bolt1640.count =
+                complect.struts.count * 4;
+              this.currentSсheme.products.spacerSquare.count = 0;
+            }
             this.currentSсheme.products.strew.count =
               this.currentSсheme.products.bolt1645.count +
               this.currentSсheme.products.bolt1640.count;
             this.currentSсheme.products.spacer.count =
               this.currentSсheme.products.bolt1645.count +
               this.currentSсheme.products.bolt1640.count;
-            this.currentSсheme.products.spacerSquare.count = this.currentSсheme.products.bolt1640.count;
           }
 
           break;
@@ -935,7 +2006,8 @@ new Vue({
             this.currentSсheme.products.spacer.count =
               this.currentSсheme.products.bolt1645.count +
               this.currentSсheme.products.bolt1640.count;
-            this.currentSсheme.products.spacerSquare.count = complect.struts.count * 2;
+            this.currentSсheme.products.spacerSquare.count =
+              complect.struts.count * 2;
           } else {
             if (this.selectStrut.type === "КА") {
               this.currentSсheme.products.bolt1645.count =
@@ -955,7 +2027,8 @@ new Vue({
             this.currentSсheme.products.spacer.count =
               this.currentSсheme.products.bolt1645.count +
               this.currentSсheme.products.bolt1640.count;
-            this.currentSсheme.products.spacerSquare.count = complect.struts.count * 2;
+            this.currentSсheme.products.spacerSquare.count =
+              complect.struts.count * 2;
           }
           break;
         case "Мостовое ограждение":
@@ -983,7 +2056,8 @@ new Vue({
 
       complect.struts = this.calcStrut();
       complect.bracket = this.calcBrackets(complect.struts);
-      complect.bracket.count = complect.struts.count;
+      complect.bracket.count =
+        complect.struts.count * complect.struts.balksMultiply;
       this.consumables(complect, balksCount);
 
       for (let [key, value] of Object.entries(this.currentSсheme.products)) {
@@ -998,7 +2072,11 @@ new Vue({
         complect.retroreflective.count = Math.ceil(this.lenghtWorkSections / 4);
       }
 
-      console.log(complect);
+      this.weight = 0;
+      for (let [key, value] of Object.entries(complect)) {
+        this.weight += value.count * value.weight;
+      }
+
       return complect;
     }
   },
