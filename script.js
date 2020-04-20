@@ -833,7 +833,7 @@ const shemasTY = {
         fullname: "Стойка дорожная СД-Ш16",
         type: "КЖ",
         balksMultiply: 1,
-        weight: 23.3,
+        weight: 20,
         step: 2
       },
       {
@@ -849,7 +849,7 @@ const shemasTY = {
         fullname: "Стойка дорожная СД-Ш16",
         type: "КЖ",
         balksMultiply: 1,
-        weight: 23.3,
+        weight: 20,
         step: 1.5
       },
       {
@@ -881,7 +881,7 @@ const shemasTY = {
         fullname: "Стойка дорожная СД-Ш16",
         type: "КЖ",
         balksMultiply: 1,
-        weight: 23.3,
+        weight: 20,
         step: 2
       },
       {
@@ -913,7 +913,7 @@ const shemasTY = {
         fullname: "Стойка дорожная СД-Ш16",
         type: "КЖ",
         balksMultiply: 1,
-        weight: 23.3,
+        weight: 20,
         step: 2
       },
       {
@@ -953,7 +953,7 @@ const shemasTY = {
         fullname: "Стойка дорожная СД-Ш16",
         type: "КА",
         balksMultiply: 1,
-        weight: 23.3,
+        weight: 20,
         step: 3
       },
       {
@@ -985,7 +985,7 @@ const shemasTY = {
         fullname: "Стойка дорожная СД-Ш16",
         type: "КА",
         balksMultiply: 1,
-        weight: 23.3,
+        weight: 20,
         step: 3
       },
       {
@@ -1001,7 +1001,7 @@ const shemasTY = {
         fullname: "Стойка дорожная СД-Ш16",
         type: "КА",
         balksMultiply: 1,
-        weight: 23.3,
+        weight: 20,
         step: 2
       },
       {
@@ -1033,7 +1033,7 @@ const shemasTY = {
         fullname: "Стойка дорожная СД-Ш16",
         type: "КА",
         balksMultiply: 2,
-        weight: 23.3,
+        weight: 20,
         step: 2
       },
       {
@@ -1065,7 +1065,7 @@ const shemasTY = {
         fullname: "Стойка дорожная СД-Ш16",
         type: "КА",
         balksMultiply: 2,
-        weight: 23.3,
+        weight: 20,
         step: 2
       },
       {
@@ -1203,7 +1203,7 @@ const shemasTY = {
         fullname: "Стойка дорожная СД-Ш16",
         type: "КА",
         balksMultiply: 1,
-        weight: 23.3,
+        weight: 20,
         step: 3
       },
       {
@@ -1227,7 +1227,7 @@ const shemasTY = {
         fullname: "Стойка дорожная СД-Ш16",
         type: "КА",
         balksMultiply: 2,
-        weight: 23.3,
+        weight: 20,
         step: 3
       },
       {
@@ -1235,7 +1235,7 @@ const shemasTY = {
         fullname: "Стойка дорожная СД-Ш16",
         type: "КА",
         balksMultiply: 2,
-        weight: 23.3,
+        weight: 20,
         step: 2
       },
       {
@@ -1243,7 +1243,7 @@ const shemasTY = {
         fullname: "Стойка дорожная СД-Ш16",
         type: "КА",
         balksMultiply: 2,
-        weight: 23.3,
+        weight: 20,
         step: 1.5
       },
       {
@@ -1793,7 +1793,7 @@ new Vue({
   el: "#app",
   data: {
     lenghtWorkSections: 0,
-    amountWorkSections: 0,
+    amountWorkSections: 1,
     selectBalk: {},
     selectStrut: {},
     currentSсheme: {},
