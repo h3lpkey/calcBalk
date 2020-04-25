@@ -541,56 +541,56 @@ const shemasGOST = {
         name: "11-МО/130-0,75-3,0÷0,70 У1 (СМ-1)",
         fullname: "Стойка мостовая СМ-1 (ГОСТ 2012)",
         balksMultiply: 1,
-        weight: 16.3,
+        weight: 17.3,
         step: 3
       },
       {
         name: "11-МО/130-0,75-2,5÷0,75 У1 (СМ-1)",
         fullname: "Стойка мостовая СМ-1 (ГОСТ 2012)",
         balksMultiply: 1,
-        weight: 16.3,
+        weight: 17.3,
         step: 2.5
       },
       {
         name: "11-МО/130-0,75-3,0÷0,75 У1 (СМ-2)",
         fullname: "Стойка мостовая СМ-2 (ГОСТ 2012)",
         balksMultiply: 1,
-        weight: 20.6,
+        weight: 21.3,
         step: 3
       },
       {
         name: "11-МО/130-0,75-4,0÷0,75 У1 (СМ-2)",
         fullname: "Стойка мостовая СМ-2 (ГОСТ 2012)",
         balksMultiply: 1,
-        weight: 20.6,
+        weight: 21.3,
         step: 4
       },
       {
         name: "11-МО/190-0,75-1,5÷0,75 У2 (СМ-1)",
         fullname: "Стойка мостовая СМ-1 (ГОСТ 2012)",
         balksMultiply: 1,
-        weight: 16.3,
+        weight: 17.3,
         step: 1.5
       },
       {
         name: "11-МО/190-0,75-2,0÷0,75 У2 (СМ-2)",
         fullname: "Стойка мостовая СМ-2 (ГОСТ 2012)",
         balksMultiply: 1,
-        weight: 20.6,
+        weight: 21.3,
         step: 2
       },
       {
         name: "11-МО/190-0,75-1,5÷0,75 У2 (СМ-1)",
         fullname: "Стойка мостовая СМ-1 (ГОСТ 2012)",
         balksMultiply: 1,
-        weight: 16.3,
+        weight: 17.3,
         step: 1.5
       },
       {
         name: "11-МО/190-0,75-2,0÷0,75 У2 (СМ-2)",
         fullname: "Стойка мостовая СМ-2 (ГОСТ 2012)",
         balksMultiply: 1,
-        weight: 20.6,
+        weight: 21.3,
         step: 2
       },
       {
@@ -604,28 +604,28 @@ const shemasGOST = {
         name: "11-МО/250-0,75-1,0÷0,70 У3 (СМ-2)",
         fullname: "Стойка мостовая СМ-2 (ГОСТ 2012)",
         balksMultiply: 1,
-        weight: 20.6,
+        weight: 21.3,
         step: 1
       },
       {
         name: "11-МО/250-0,75-1,5÷0,70 У3 (СМ-2)",
         fullname: "Стойка мостовая СМ-2 (ГОСТ 2012)",
         balksMultiply: 1,
-        weight: 20.6,
+        weight: 21.3,
         step: 1.5
       },
       {
         name: "11-МО/300-0,75-1,0÷0,70 У4 (СМ-2)",
         fullname: "Стойка мостовая СМ-2 (ГОСТ 2012)",
         balksMultiply: 1,
-        weight: 20.6,
+        weight: 21.3,
         step: 1
       },
       {
         name: "11-МО/300-0,75-1,5÷0,70 У4 (СМ-3)",
         fullname: "Стойка мостовая СМ-3 (ГОСТ 2012)",
         balksMultiply: 1,
-        weight: 25,
+        weight: 21,
         step: 1.5
       },
       {
@@ -1451,7 +1451,7 @@ const shemasTY = {
         name: "11-МО У4 4 СМ-3",
         fullname: "Стойка мостовая СМ-3",
         balksMultiply: 1,
-        weight: 16.3,
+        weight: 21,
         step: 1.5
       },
       {
@@ -1472,7 +1472,7 @@ const shemasTY = {
         name: "11-МД У4 4 СМ-3",
         fullname: "Стойка мостовая СМ-3",
         balksMultiply: 1,
-        weight: 16.3,
+        weight: 21,
         step: 2
       },
       {
@@ -1556,7 +1556,7 @@ const shemasTY = {
         name: "15-МО (К) У1 3 СМ-4",
         fullname: "Стойка мостовая СМ-4",
         balksMultiply: 1,
-        weight: 16.3,
+        weight: 26,
         step: 2
       },
       {
@@ -1570,7 +1570,7 @@ const shemasTY = {
         name: "15-МО (К) У2 3 СМ-4",
         fullname: "Стойка мостовая СМ-4",
         balksMultiply: 1,
-        weight: 16.3,
+        weight: 26,
         step: 1
       },
       {
@@ -1598,28 +1598,28 @@ const shemasTY = {
         name: "15-МО (К) У1 3 СМ-4",
         fullname: "Стойка мостовая СМ-4",
         balksMultiply: 1,
-        weight: 16.3,
+        weight: 26,
         step: 2
       },
       {
         name: "15-МО (К) У2 3 СМ-4",
         fullname: "Стойка мостовая СМ-4",
         balksMultiply: 1,
-        weight: 16.3,
+        weight: 26,
         step: 1
       },
       {
         name: "15-МО (К) У2 3 СМ-4",
         fullname: "Стойка мостовая СМ-4",
         balksMultiply: 1,
-        weight: 16.3,
+        weight: 26,
         step: 1.5
       },
       {
         name: "15-МО (К) У3 4 СМ-5",
         fullname: "Стойка мостовая СМ-4",
         balksMultiply: 1,
-        weight: 16.3,
+        weight: 26,
         step: 1
       },
       {
@@ -1633,7 +1633,7 @@ const shemasTY = {
         name: "15-МО (К) У4 4 СМ-5",
         fullname: "Стойка мостовая СМ-4",
         balksMultiply: 1,
-        weight: 16.3,
+        weight: 26,
         step: 1
       },
       {
@@ -1654,7 +1654,7 @@ const shemasTY = {
         name: "15-МД (К) У3 4 СМ-4",
         fullname: "Стойка мостовая СМ-4",
         balksMultiply: 1,
-        weight: 16.3,
+        weight: 26,
         step: 1
       },
       {
@@ -1710,7 +1710,7 @@ const shemasTY = {
         name: "15-МД (К) У4 3 СМ-4",
         fullname: "Стойка мостовая СМ-4",
         balksMultiply: 1,
-        weight: 16.3,
+        weight: 26,
         step: 1
       },
       {
