@@ -540,6 +540,7 @@ const shemasGOST = {
       {
         name: "11-МО/130-0,75-3,0÷0,70 У1 (СМ-1)",
         fullname: "Стойка мостовая СМ-1 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 1,
         weight: 17.3,
         step: 3
@@ -547,6 +548,7 @@ const shemasGOST = {
       {
         name: "11-МО/130-0,75-2,5÷0,75 У1 (СМ-1)",
         fullname: "Стойка мостовая СМ-1 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 1,
         weight: 17.3,
         step: 2.5
@@ -554,6 +556,7 @@ const shemasGOST = {
       {
         name: "11-МО/130-0,75-3,0÷0,75 У1 (СМ-2)",
         fullname: "Стойка мостовая СМ-2 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 1,
         weight: 21.3,
         step: 3
@@ -561,6 +564,7 @@ const shemasGOST = {
       {
         name: "11-МО/130-0,75-4,0÷0,75 У1 (СМ-2)",
         fullname: "Стойка мостовая СМ-2 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 1,
         weight: 21.3,
         step: 4
@@ -568,6 +572,7 @@ const shemasGOST = {
       {
         name: "11-МО/190-0,75-1,5÷0,75 У2 (СМ-1)",
         fullname: "Стойка мостовая СМ-1 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 1,
         weight: 17.3,
         step: 1.5
@@ -575,6 +580,7 @@ const shemasGOST = {
       {
         name: "11-МО/190-0,75-2,0÷0,75 У2 (СМ-2)",
         fullname: "Стойка мостовая СМ-2 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 1,
         weight: 21.3,
         step: 2
@@ -582,6 +588,7 @@ const shemasGOST = {
       {
         name: "11-МО/190-0,75-1,5÷0,75 У2 (СМ-1)",
         fullname: "Стойка мостовая СМ-1 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 1,
         weight: 17.3,
         step: 1.5
@@ -589,6 +596,7 @@ const shemasGOST = {
       {
         name: "11-МО/190-0,75-2,0÷0,75 У2 (СМ-2)",
         fullname: "Стойка мостовая СМ-2 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 1,
         weight: 21.3,
         step: 2
@@ -596,6 +604,7 @@ const shemasGOST = {
       {
         name: "11-МО/250-0,75-1,0÷0,70 У3 (СМ-1)",
         fullname: "Стойка мостовая СМ-1 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1
@@ -603,6 +612,7 @@ const shemasGOST = {
       {
         name: "11-МО/250-0,75-1,0÷0,70 У3 (СМ-2)",
         fullname: "Стойка мостовая СМ-2 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 1,
         weight: 21.3,
         step: 1
@@ -610,6 +620,7 @@ const shemasGOST = {
       {
         name: "11-МО/250-0,75-1,5÷0,70 У3 (СМ-2)",
         fullname: "Стойка мостовая СМ-2 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 1,
         weight: 21.3,
         step: 1.5
@@ -617,6 +628,7 @@ const shemasGOST = {
       {
         name: "11-МО/300-0,75-1,0÷0,70 У4 (СМ-2)",
         fullname: "Стойка мостовая СМ-2 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 1,
         weight: 21.3,
         step: 1
@@ -624,6 +636,7 @@ const shemasGOST = {
       {
         name: "11-МО/300-0,75-1,5÷0,70 У4 (СМ-3)",
         fullname: "Стойка мостовая СМ-3 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 1,
         weight: 21,
         step: 1.5
@@ -631,6 +644,7 @@ const shemasGOST = {
       {
         name: "11-МО/190-1,10-3,0÷1,15 У2 (СМ-7)",
         fullname: "Стойка мостовая СМ-7 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 2,
         weight: 20.5,
         step: 3
@@ -638,6 +652,7 @@ const shemasGOST = {
       {
         name: "11-МО/190-1,10-4,0÷1,10 У2 (СМ-8)",
         fullname: "Стойка мостовая СМ-8 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 2,
         weight: 25.5,
         step: 4
@@ -645,6 +660,7 @@ const shemasGOST = {
       {
         name: "11-МО/250-1,10-2,0÷1,10 У3 (СМ-7)",
         fullname: "Стойка мостовая СМ-7 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 2,
         weight: 20.5,
         step: 2
@@ -652,6 +668,7 @@ const shemasGOST = {
       {
         name: "11-МО/250-1,10-2,5÷1,00 У3 (СМ-8)",
         fullname: "Стойка мостовая СМ-8 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 2,
         weight: 25.5,
         step: 2.5
@@ -659,6 +676,7 @@ const shemasGOST = {
       {
         name: "11-МО/300-1,10-1,5÷1,05 У4 (СМ-7)",
         fullname: "Стойка мостовая СМ-7 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 2,
         weight: 20.5,
         step: 1.5
@@ -666,6 +684,7 @@ const shemasGOST = {
       {
         name: "11-МО/300-1,10-2,0÷1,00 У4 (СМ-8)",
         fullname: "Стойка мостовая СМ-8 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 2,
         weight: 25.5,
         step: 2
@@ -673,6 +692,7 @@ const shemasGOST = {
       {
         name: "11-МО/350-1,30-2,0÷1,00 У5 (СМ-10)",
         fullname: "Стойка мостовая СМ-10 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 2,
         weight: 34.16,
         step: 2
@@ -680,6 +700,7 @@ const shemasGOST = {
       {
         name: "11-МО/400-1,30-1,5÷1,00 У6 (СМ-10)",
         fullname: "Стойка мостовая СМ-10 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 2,
         weight: 34.16,
         step: 1.5
@@ -687,6 +708,7 @@ const shemasGOST = {
       {
         name: "11-МО/450-1,50-1,0÷1,00 У7 (СМ-11)",
         fullname: "Стойка мостовая СМ-11 (ГОСТ 2012)",
+        type: "КА",
         balksMultiply: 2,
         weight: 37.4,
         step: 1
@@ -1807,7 +1829,7 @@ new Vue({
       this.currentProduct = {};
       this.currentSсheme = {};
       this.lenghtWorkSections = 0;
-      this.amountWorkSections = 0;
+      this.amountWorkSections = 1;
       this.weight = 0;
     },
 
@@ -2077,6 +2099,7 @@ new Vue({
         this.weight += value.count * value.weight;
       }
 
+      console.log(complect);
       return complect;
     }
   },
