@@ -1374,6 +1374,7 @@ const shemasTY = {
       {
         name: "11-МО У1 3 СМ-1",
         fullname: "Стойка мостовая СМ-1",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 3
@@ -1381,6 +1382,7 @@ const shemasTY = {
       {
         name: "11-МО У1 4 СМ-1",
         fullname: "Стойка мостовая СМ-1",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 2.5
@@ -1388,6 +1390,7 @@ const shemasTY = {
       {
         name: "11-МО У1 4 СМ-2",
         fullname: "Стойка мостовая СМ-2",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 3
@@ -1395,6 +1398,7 @@ const shemasTY = {
       {
         name: "11-МО У1 4 СМ-2",
         fullname: "Стойка мостовая СМ-2",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 4
@@ -1402,6 +1406,7 @@ const shemasTY = {
       {
         name: "11-МО У1 4 СМ-С120",
         fullname: "Стойка мостовая СМ-С120",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 4
@@ -1409,6 +1414,7 @@ const shemasTY = {
       {
         name: "11-МО У2 3 СМ-1",
         fullname: "Стойка мостовая СМ-1",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1.5
@@ -1416,6 +1422,7 @@ const shemasTY = {
       {
         name: "11-МО У2 3 СМ-2",
         fullname: "Стойка мостовая СМ-2",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 2
@@ -1423,6 +1430,7 @@ const shemasTY = {
       {
         name: "11-МО У2 3 СМ-120",
         fullname: "Стойка мостовая СМ-120",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 2
@@ -1430,6 +1438,7 @@ const shemasTY = {
       {
         name: "11-МО У2 4 СМ-1",
         fullname: "Стойка мостовая СМ-1",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1.5
@@ -1437,6 +1446,7 @@ const shemasTY = {
       {
         name: "11-МО У2 4 СМ-2",
         fullname: "Стойка мостовая СМ-2",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 2
@@ -1444,6 +1454,7 @@ const shemasTY = {
       {
         name: "11-МО У3 3 СМ-1",
         fullname: "Стойка мостовая СМ-1",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1
@@ -1451,6 +1462,7 @@ const shemasTY = {
       {
         name: "11-МО У3 3 СМ-2",
         fullname: "Стойка мостовая СМ-2",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1
@@ -1458,6 +1470,7 @@ const shemasTY = {
       {
         name: "11-МО У3 4 СМ-2",
         fullname: "Стойка мостовая СМ-2",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1.5
@@ -1465,6 +1478,7 @@ const shemasTY = {
       {
         name: "11-МО У4 4 СМ-2",
         fullname: "Стойка мостовая СМ-2",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1
@@ -1472,6 +1486,7 @@ const shemasTY = {
       {
         name: "11-МО У4 4 СМ-3",
         fullname: "Стойка мостовая СМ-3",
+        type: "КА",
         balksMultiply: 1,
         weight: 21,
         step: 1.5
@@ -1479,6 +1494,7 @@ const shemasTY = {
       {
         name: "11-МД У4 4 СМ-1",
         fullname: "Стойка мостовая СМ-1",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1
@@ -1486,6 +1502,7 @@ const shemasTY = {
       {
         name: "11-МД У4 4 СМ-2",
         fullname: "Стойка мостовая СМ-2",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1.5
@@ -1493,6 +1510,7 @@ const shemasTY = {
       {
         name: "11-МД У4 4 СМ-3",
         fullname: "Стойка мостовая СМ-3",
+        type: "КА",
         balksMultiply: 1,
         weight: 21,
         step: 2
@@ -1500,6 +1518,7 @@ const shemasTY = {
       {
         name: "11-МО (УБ) У2 3 СМ-7",
         fullname: "Стойка мостовая СМ-7",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 3
@@ -1507,6 +1526,7 @@ const shemasTY = {
       {
         name: "11-МО (УБ) У2 3 СМ-8",
         fullname: "Стойка мостовая СМ-8",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 4
@@ -1514,6 +1534,7 @@ const shemasTY = {
       {
         name: "11-МО (УБ) У3 3 СМ-7",
         fullname: "Стойка мостовая СМ-7",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 2
@@ -1521,6 +1542,7 @@ const shemasTY = {
       {
         name: "11-МО (УБ) У3 3 СМ-8",
         fullname: "Стойка мостовая СМ-8",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 2.5
@@ -1528,6 +1550,7 @@ const shemasTY = {
       {
         name: "11-МО (УБ) У4 4 СМ-7",
         fullname: "Стойка мостовая СМ-7",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1.5
@@ -1535,6 +1558,7 @@ const shemasTY = {
       {
         name: "11-МО (УБ) У4 4 СМ-8",
         fullname: "Стойка мостовая СМ-8",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 2
@@ -1542,6 +1566,7 @@ const shemasTY = {
       {
         name: "11-МО (УБ) У5 4 СМ-9",
         fullname: "Стойка мостовая СМ-9",
+        type: "КА",
         balksMultiply: 2,
         weight: 16.3,
         step: 2
@@ -1549,6 +1574,7 @@ const shemasTY = {
       {
         name: "11-МО (УБ) У6 4 СМ-9",
         fullname: "Стойка мостовая СМ-9",
+        type: "КА",
         balksMultiply: 2,
         weight: 16.3,
         step: 1.5
@@ -1556,6 +1582,7 @@ const shemasTY = {
       {
         name: "11-МО (УБ) У7 4 СМ-9",
         fullname: "Стойка мостовая СМ-9",
+        type: "КА",
         balksMultiply: 2,
         weight: 16.3,
         step: 1.5
@@ -1563,6 +1590,7 @@ const shemasTY = {
       {
         name: "11-МД (УБ) У5 4 СМ-7",
         fullname: "Стойка мостовая СМ-7",
+        type: "КА",
         balksMultiply: 2,
         weight: 16.3,
         step: 2
@@ -1570,6 +1598,7 @@ const shemasTY = {
       {
         name: "11-МД (УБ) У6 4 СМ-8",
         fullname: "Стойка мостовая СМ-8",
+        type: "КА",
         balksMultiply: 2,
         weight: 16.3,
         step: 1.5
@@ -1577,6 +1606,7 @@ const shemasTY = {
       {
         name: "15-МО (К) У1 3 СМ-4",
         fullname: "Стойка мостовая СМ-4",
+        type: "КА",
         balksMultiply: 1,
         weight: 26,
         step: 2
@@ -1584,6 +1614,7 @@ const shemasTY = {
       {
         name: "15-МО (К) У1 4 СМ-5",
         fullname: "Стойка мостовая СМ-5",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 3
@@ -1591,6 +1622,7 @@ const shemasTY = {
       {
         name: "15-МО (К) У2 3 СМ-4",
         fullname: "Стойка мостовая СМ-4",
+        type: "КА",
         balksMultiply: 1,
         weight: 26,
         step: 1
@@ -1598,6 +1630,7 @@ const shemasTY = {
       {
         name: "15-МО (К) У2 3 СМ-5",
         fullname: "Стойка мостовая СМ-5",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1.5
@@ -1612,6 +1645,7 @@ const shemasTY = {
       {
         name: "15-МО (К) У3 4 СМ-6",
         fullname: "Стойка мостовая СМ-6",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1.5
@@ -1619,6 +1653,7 @@ const shemasTY = {
       {
         name: "15-МО (К) У1 3 СМ-4",
         fullname: "Стойка мостовая СМ-4",
+        type: "КА",
         balksMultiply: 1,
         weight: 26,
         step: 2
@@ -1626,6 +1661,7 @@ const shemasTY = {
       {
         name: "15-МО (К) У2 3 СМ-4",
         fullname: "Стойка мостовая СМ-4",
+        type: "КА",
         balksMultiply: 1,
         weight: 26,
         step: 1
@@ -1633,6 +1669,7 @@ const shemasTY = {
       {
         name: "15-МО (К) У2 3 СМ-4",
         fullname: "Стойка мостовая СМ-4",
+        type: "КА",
         balksMultiply: 1,
         weight: 26,
         step: 1.5
@@ -1640,6 +1677,7 @@ const shemasTY = {
       {
         name: "15-МО (К) У3 4 СМ-5",
         fullname: "Стойка мостовая СМ-4",
+        type: "КА",
         balksMultiply: 1,
         weight: 26,
         step: 1
@@ -1647,6 +1685,7 @@ const shemasTY = {
       {
         name: "15-МО (К) У3 4 СМ-6",
         fullname: "Стойка мостовая СМ-6",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1.5
@@ -1654,6 +1693,7 @@ const shemasTY = {
       {
         name: "15-МО (К) У4 4 СМ-5",
         fullname: "Стойка мостовая СМ-4",
+        type: "КА",
         balksMultiply: 1,
         weight: 26,
         step: 1
@@ -1661,6 +1701,7 @@ const shemasTY = {
       {
         name: "15-МО (К) У4 4 СМ-6",
         fullname: "Стойка мостовая СМ-6",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1.5
@@ -1668,6 +1709,7 @@ const shemasTY = {
       {
         name: "15-МО (К) У5 4 СМ-6",
         fullname: "Стойка мостовая СМ-6",
+        type: "КА",
         balksMultiply: 2,
         weight: 16.3,
         step: 1
@@ -1675,6 +1717,7 @@ const shemasTY = {
       {
         name: "15-МД (К) У3 4 СМ-4",
         fullname: "Стойка мостовая СМ-4",
+        type: "КА",
         balksMultiply: 1,
         weight: 26,
         step: 1
@@ -1682,6 +1725,7 @@ const shemasTY = {
       {
         name: "15-МД (К) У3 4 СМ-5",
         fullname: "Стойка мостовая СМ-5",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1.5
@@ -1689,6 +1733,7 @@ const shemasTY = {
       {
         name: "15-МД (К) У3 4 СМ-6",
         fullname: "Стойка мостовая СМ-6",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 2
@@ -1696,6 +1741,7 @@ const shemasTY = {
       {
         name: "15-МД (К) У4 4 СМ-6",
         fullname: "Стойка мостовая СМ-6",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1
@@ -1703,6 +1749,7 @@ const shemasTY = {
       {
         name: "15-МД (К) У3 4 СМ-5",
         fullname: "Стойка мостовая СМ-5",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1.5
@@ -1710,6 +1757,7 @@ const shemasTY = {
       {
         name: "15-МД (К) У3 4 СМ-6",
         fullname: "Стойка мостовая СМ-6",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 2
@@ -1717,6 +1765,7 @@ const shemasTY = {
       {
         name: "15-МД (К) У4 4 СМ-5",
         fullname: "Стойка мостовая СМ-5",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1
@@ -1724,6 +1773,7 @@ const shemasTY = {
       {
         name: "15-МД (К) У4 4 СМ-6",
         fullname: "Стойка мостовая СМ-6",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1.5
@@ -1731,6 +1781,7 @@ const shemasTY = {
       {
         name: "15-МД (К) У4 3 СМ-4",
         fullname: "Стойка мостовая СМ-4",
+        type: "КА",
         balksMultiply: 1,
         weight: 26,
         step: 1
@@ -1738,6 +1789,7 @@ const shemasTY = {
       {
         name: "15-МД (К) У4 3 СМ-5",
         fullname: "Стойка мостовая СМ-5",
+        type: "КА",
         balksMultiply: 1,
         weight: 16.3,
         step: 1.5
@@ -1745,6 +1797,7 @@ const shemasTY = {
       {
         name: "15-МД (К) У5 3 СМ-5",
         fullname: "Стойка мостовая СМ-5",
+        type: "КА",
         balksMultiply: 2,
         weight: 16.3,
         step: 1
@@ -1752,6 +1805,7 @@ const shemasTY = {
       {
         name: "15-МД (К) У5 3 СМ-6",
         fullname: "Стойка мостовая СМ-6",
+        type: "КА",
         balksMultiply: 2,
         weight: 16.3,
         step: 1.5
